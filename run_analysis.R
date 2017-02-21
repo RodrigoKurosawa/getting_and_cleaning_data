@@ -58,3 +58,4 @@ df_all_data <- cbind(total_subjects,activities,total_set)
 library(dplyr)
 
 final <- df_all_data %>% group_by(Subject,Activity) %>% summarise_each(funs(mean))
+write.table(final,file='final_df.txt',row.name=FALSE,sep=";")
