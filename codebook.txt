@@ -1,0 +1,34 @@
+To see the description of the experiment and the raw dataset,
+you should read the 'UCI HAR Dataset/README.txt'
+
+'final_df.txt' description
+
+Column 1: 'Subject'
+Identification of the subject who performed the activity (Range from 1 to 30)
+
+Column 2: 'Activity'
+Type of the activity performed.
+(6 types: laying, sitting, standing, walking, walking downstairs, walking upstairs)
+
+Columns 3 to 68:
+The raw dataset contains measurements of variables for each subject and each activity.
+This dataset contains the average of each variable for each subject and each acitity.
+The variables chosen for this dataset are:
+
+tBodyAcc-XYZ - 6 columns: mean() and std() for each axis
+tGravityAcc-XYZ - 6 columns: mean() and std() for each axis
+tBodyAccJerk-XYZ - 6 columns: mean() and std() for each axis
+tBodyGyro-XYZ - 6 columns: mean() and std() for each axis
+tBodyGyroJerk-XYZ - 6 columns: mean() and std() for each axis
+tBodyAccMag - 2 columns: mean() and std()
+tGravityAccMag - 2 columns: mean() and std()
+tBodyAccJerkMag - 2 columns: mean() and std()
+tBodyGyroMag - 2 columns: mean() and std()
+tBodyGyroJerkMag - 2 columns: mean() and std()
+fBodyAcc-XYZ - 6 columns: mean() and std() for each axis
+fBodyAccJerk-XYZ - 6 columns: mean() and std() for each axis
+fBodyGyro-XYZ - 6 columns: mean() and std() for each axis
+fBodyAccMag - 2 columns: mean() and std()
+fBodyAccJerkMag - 2 columns: mean() and std()
+fBodyGyroMag - 2 columns: mean() and std()
+fBodyGyroJerkMag - 2 columns: mean() and std()

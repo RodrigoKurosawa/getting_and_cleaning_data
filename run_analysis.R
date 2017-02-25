@@ -51,11 +51,11 @@ for (i in 1:nrow(activities)){
 # 'activities' dataframe already done
 names(total_subjects) <- "Subject"
 
-df_all_data <- cbind(total_subjects,activities,total_set)
+df_final_data <- cbind(total_subjects,activities,df_means_stds)
 
 #5. From the data set in step 4, creates a second, independent tidy data set with
 # the average of each variable for each activity and each subject.
 library(dplyr)
 
-final <- df_all_data %>% group_by(Subject,Activity) %>% summarise_each(funs(mean))
+final <- df_final_data %>% group_by(Subject,Activity) %>% summarise_each(funs(mean))
 write.table(final,file='final_df.txt',row.name=FALSE,sep=";")
